@@ -42,15 +42,15 @@ keytool -import -alias wso2carbon -file wso2carbon.cer -keystore client-truststo
 
 4.Set $PUPPET_HOME environment variable.
 
-export PUPPET_HOME=<WhereThePuppetIsCheckedOut>/puppet-modules
+export PUPPET_HOME= WhereThePuppetIsCheckedOut/puppet-modules
 
-5.Download and copy "jdk-7u80-linux-x64.tar.gz" to <PUPPET_HOME>/modules/wso2base/files directory.
+5.Download and copy "jdk-7u80-linux-x64.tar.gz" to PUPPET_HOME/modules/wso2base/files directory.
 
 6.Install Vagrant. (sudo apt-get install vagrant)
 
 7.Install VirtualBox and open it (sudo apt-get install virtualbox).
 
-8.Goto <PUPPET_HOME>/puppet-modules/vagrant
+8.Goto PUPPET_HOME/puppet-modules/vagrant
 
 9.Run MySQL_DB_ScriptForAPIM200_DistributedSetup.sql in a MySQL server. (credentials : username = root/password = root)
 
@@ -70,7 +70,7 @@ vagrant ssh tm.dev.wso2.org
 
 sudo su
 
-cd /mnt/<IP of the tm.dev.wso2.org>/wso2am-2.0.0/
+cd /mnt/ IP of the tm.dev.wso2.org /wso2am-2.0.0/
 
 rm -r repository/deployment/server/jaggeryapps/
 
@@ -84,7 +84,7 @@ Please refer [1] for more information.
 
 11.Steps to log in will be as follows.
 
-Goto <PUPPET_HOME>/puppet-modules/vagrant (command line window)
+Goto PUPPET_HOME/puppet-modules/vagrant (command line window)
 
 Type the following commands.
 
@@ -92,7 +92,7 @@ vagrant ssh km.dev.wso2.org
 
 sudo su
 
-cd /mnt/<IP of the km.dev.wso2.org>/wso2am-2.0.0/
+cd /mnt/ IP of the km.dev.wso2.org /wso2am-2.0.0/
 
 To view the logs : "cat repository/logs/wso2carbon.log" or "tail -f repository/logs/wso2carbon.log"
 
@@ -103,7 +103,7 @@ vagrant ssh tm.dev.wso2.org, vagrant ssh store.dev.wso2.org, vagrant ssh publish
 Publisher URL : https://publisher.dev.wso2.org:9443/publisher
 Store URL : https://store.dev.wso2.org:9443/store
 
-12. To cleanup all, type "vagrant destroy -f"
+12.To cleanup all, type "vagrant destroy -f"
 
 
 More information :
