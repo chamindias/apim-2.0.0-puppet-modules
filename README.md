@@ -1,10 +1,12 @@
 Puppet Modules - WSO2 API Manager 2.0.0 distributed setup
 
 This puppet module creates a single node setup as follows.
-192.168.100.2	am.dev.wso2.org
+
+192.168.100.2	  am.dev.wso2.org
 
 Add the below entry to /etc/hosts and save.
-192.168.100.2	am.dev.wso2.org
+
+192.168.100.2	  am.dev.wso2.org
 
 Steps
 
@@ -28,8 +30,11 @@ export PUPPET_HOME=<WhereThePuppetIsCheckedOut>/puppet-modules
 Goto <PUPPET_HOME>/puppet-modules/vagrant (command line window)
 
 Type the following commands.
+
 vagrant ssh am.dev.wso2.org
+
 sudo su
+
 cd /mnt/<IP of the am.dev.wso2.org>/wso2am-2.0.0/
 
 9. To view the logs : "cat repository/logs/wso2carbon.log" or "tail -f repository/logs/wso2carbon.log"
